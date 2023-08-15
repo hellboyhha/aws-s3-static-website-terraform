@@ -6,7 +6,7 @@ generate "provider" {
   if_exists = "overwrite_terragrunt"
   contents = <<EOF
 provider "aws" {
-  region = "us-east-1"
+  region = "<your aws region>"
 }
 EOF
 
@@ -21,10 +21,10 @@ remote_state {
   }
 
   config = {
-    bucket         = "prod-terraform-state-starshoppin"
+    bucket         = "<your aws s3 bucket name>"
     key            = "${path_relative_to_include()}/terraform.tfstate"
-    region         = "us-east-1"
+    region         = "<your aws region>"
     encrypt        = true
-    dynamodb_table = "prod-terraform-state-starshoppin"
+    dynamodb_table = "<your aws dynamodb table name>"
   }
 }
