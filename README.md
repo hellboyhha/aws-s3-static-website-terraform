@@ -1,7 +1,7 @@
 
 # AWS S3 Static Website Setup [Terraform + Terragrunt + Terratest]
 
-This example entails the establishment of an Amazon Web Services (AWS) Simple Storage Service (S3) static website through the integrated utilization of Terraform and Terragrunt. Additionally, it includes the integration of Terratest for the execution of pre-deployment testing procedures.
+This example is about creating aws s3 static website through the integration of Terraform and Terragrunt. Additionally, it includes the integration of Terratest for the execution of pre-deployment testing procedures.
 
 ### Prerequistes
 - [AWS Access Key ID and Secret Access key](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html)
