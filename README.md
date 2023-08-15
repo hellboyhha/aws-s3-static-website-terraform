@@ -48,8 +48,9 @@ Benefits of using separate verioning modules
 - **Verify functionality and reliability** of our infrastructure code. Testing can validate that our Terraform code does what we expect it to do, and that it can handle different scenarios and environments.
 
 ### How can we conduct testing for the deployment of this S3 static website using Terraform?
-Upon deploying the static S3 website, it will be observed that upon accessing the URL, a default "400 Not Found, Code: NoSuchKey" error will be encountered. This error arises due to the absence of the required web pages such as "index.html" not being updated in S3.
-- If we encounter this error, it indicates the successful deployment of our S3 resource.
+Upon deploying the static S3 website, it will be observed that upon accessing the URL, a default "400 Not Found, Code: NoSuchKey" response will be encountered. This response arises due to the absence of the required web pages such as "index.html" not being updated in S3.
+<img title="Expected S3 Static Website reponse" alt="Alt text" src="s3-static-website-expected-response.png">
+- If we see this expected response, it indicates the successful deployment of our S3 resource.
 - Let us now examine the go program provided below for testing purposes.
     ````go
     func TestStaticWebsite(t *testing.T) {
