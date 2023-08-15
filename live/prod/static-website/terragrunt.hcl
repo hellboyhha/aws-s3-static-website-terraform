@@ -8,7 +8,7 @@ include "root" {
 
 inputs = {
 
-  region = "us-east-1"
-  static-website-name = "prod-static-website-starshoppin"
+  region = "<your aws region>"
+  static-website-name = "<your static website name>"
 
 }
