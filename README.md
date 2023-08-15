@@ -105,7 +105,7 @@ Upon deploying the static S3 website, it will be observed that upon accessing th
 
 - This test will carry out a sequence of actions: firstly, it will execute the commands "terraform init," "terraform plan," and "terraform apply" in that specific order. 
 - Once these actions are completed, the testing program will obtain a static website URL. Following this, the test will access the obtained URL and examine whether our expected string "Code: NoSuchKey" is present within the response body of the HTTP request made to the static website URL.
-- If the specific string we expected to find in the URL response is present, the test will be considered successful. However, if this string is not found, the test will be marked as failed.
+- If the specific string we expected to find in the URL response is present, the test will be considered PASS. However, if this string is not found, the test will be marked as FAIL.
 - At the end of the test, the resource created for testing will be automatically deleted.
 ### Test Run Steps
 Under test folder, 
